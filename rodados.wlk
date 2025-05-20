@@ -28,8 +28,8 @@ class Kwid{
 // si hay una solo trafi lo que hay es un objeto
 // porque es un objeto unico
 object trafic{
-    var motor = pulenta
-    var interior = comodo
+    var property interior = comodo 
+    var property motor = pulenta
     // le delego la obligacion a otro objeto
     method capacidad() = interior.capacidad()
     // la capacidad depende del objeto que este dentro de la variable
@@ -38,6 +38,19 @@ object trafic{
     method color() = "Blanco"
     // la trafic es de color blanco independientemente del interior
     // y del motor que tengamos
+    method peso(){
+        // el peso depende de todo esto
+        return 4000 + interior.peso() + motor.peso()
+        // de la base que arranca desde 400 mas el interior mas el peso
+    }
+}
+class Especial{
+    // todos los autos van a ser dependiendo de x cosa
+    var property capacidad 
+    var property velocidadMaxima
+    var property peso 
+    var property color 
+    // depende del tipo de auto que nosotros queremos crear
 }
 object comodo{
     method capacidad() = 5
