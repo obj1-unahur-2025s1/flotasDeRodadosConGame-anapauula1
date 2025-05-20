@@ -25,7 +25,38 @@ class Kwid{
     // se lo pone como objetos cuando debemos de tomar decisiones en si
     // para eso utilizamos los booleanos
 }
-
+// si hay una solo trafi lo que hay es un objeto
+// porque es un objeto unico
+object trafic{
+    var motor = pulenta
+    var interior = comodo
+    // le delego la obligacion a otro objeto
+    method capacidad() = interior.capacidad()
+    // la capacidad depende del objeto que este dentro de la variable
+    method velocidadMaxima() = motor.velocidad()
+    //  la velocidad maxima depende de la que permite el motor
+    method color() = "Blanco"
+    // la trafic es de color blanco independientemente del interior
+    // y del motor que tengamos
+}
+object comodo{
+    method capacidad() = 5
+    method peso() = 700
+}
+object popular{
+    method capacidad() = 12
+    method peso() = 1000
+}
+object pulenta{
+    // pulenta y bataton deben de comprender los mismos mensajes
+    method peso() = 800
+    method velocidad() = 130
+}
+object bataton{
+    // por eso ambos tienen los mismos mensajes
+    method peso() = 500
+    method velocidad() = 80
+}
 
 
 
