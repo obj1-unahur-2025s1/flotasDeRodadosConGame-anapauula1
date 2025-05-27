@@ -60,6 +60,15 @@ class Especial{
     var property peso 
     var property color 
     // depende del tipo de auto que nosotros queremos crear
+   method initialize() {
+        if(not coloresValidos.listaColores().contains(color)) {
+            self.error(color.toString() + " no es un color válido")
+        }  
+    }
+    method velocidadMaxima() = velocidadMaxima.min(topeVelocidadMaxima.tope())
+}
+object topeVelocidadMaxima {
+    var property tope = 200
 }
 object comodo{
     method capacidad() = 5
