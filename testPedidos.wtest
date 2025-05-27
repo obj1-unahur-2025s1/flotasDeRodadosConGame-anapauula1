@@ -1,0 +1,13 @@
+import pedidos.*
+import rodados.*
+
+describe "test de pedidos" {
+    const cachito = new Corsa(color="rojo")
+    // creo un nuevo auto
+    const pedido1 = new Pedido(distanciaARecorrer=960,tiempoMaximo=200,cantPasajeros= 10)
+    // creo un nuevo pedido
+
+  test "cachito puede satifacer pedido1" {
+    assert.that(pedido1.puedeSatisfacerUnPedido(cachito))
+  }
+}
