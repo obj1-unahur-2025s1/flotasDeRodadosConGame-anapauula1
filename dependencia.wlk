@@ -7,11 +7,6 @@ class Dependencia {
 
     // el color del rodado debe de ser de los colores validos
     method agregarAFlota(rodado) {
-        // al conjunto le paso si contiene el color que le pasamos
-        // por el rodado.color()
-        if( not coloresValidos.listaColores().contains(rodado.color())){
-            self.error("El auto no tiene un color valido")
-        }
         flota.add(rodado)
         }
     method quitarDeFlota(rodado) {flota.remove(rodado)}

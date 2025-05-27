@@ -7,6 +7,16 @@ class Corsa{
     method capacidad() = 4
     method peso() = 1300
     method velocidadMaxima() = 150
+    method initialize(){
+        // funciona como constructo en las clases
+        // al conjunto le paso si contiene el color que le pasamos
+        // por el rodado.color()
+        if( not coloresValidos.listaColores().contains(color)){
+            // color puesto asi porque es la variable de arriba
+            // lo hacemos de esta manera
+            self.error("El auto no tiene un color valido")
+        }
+    }
 }
 // palabra para crear objetos con respecto a una clase
 // new.Corsa() permite poner atributos sin inicializar
