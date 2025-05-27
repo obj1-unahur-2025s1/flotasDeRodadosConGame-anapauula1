@@ -94,3 +94,4 @@ object coloresValidos{
     // le debo de poner el property o hacer el metodo para que me lo muestre
     // definir el metodo de consulta
 }
+
